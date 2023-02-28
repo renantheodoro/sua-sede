@@ -1,0 +1,50 @@
+/// @access private
+/// @prop {string} color - Pure colors or a map of tones
+/// @prop {color | map} color.tone - Pure colors or returned color value of functions
+/// @require {function} palette
+
+$palette: (
+  "orange": (
+    "base": #ff511e,
+    "light": #ffebe0,
+  ),
+  "purple": (
+    "base": #5452f6,
+    "light": #e4e4fc,
+    "dark": #251e63,
+  ),
+  "primary": (
+    "base": #ff511e,
+  ),
+  "grey": (
+    "base": #4b4b4b,
+    "light": #898989,
+  ),
+  "white": (
+    "base": #ffffff,
+    "background": #fafafa,
+  ),
+  "black": (
+    "base": #000000,
+  ),
+  "text": (
+    "base": #313131,
+    "light": #777777,
+    "orange": #cc380d,
+    "purple": #5452f6,
+  ),
+  "shape": (
+    "purple": #5452f6,
+    "orange": #ff511e,
+    "green": #4def77,
+  ),
+  "button": (
+    "orange": #ff511e,
+  ),
+  "link": (
+    "base": #5452f6,
+  ),
+  "red": (
+    "base": #ff3e41,
+  ),
+);
