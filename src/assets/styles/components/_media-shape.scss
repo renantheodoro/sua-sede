@@ -1,0 +1,26 @@
+.media-shape {
+  position: absolute;
+  z-index: 9;
+}
+
+.media-shape.media-shape--purple {
+  path {
+    fill: palette("shape", "purple");
+  }
+}
+
+.media-shape.media-shape--orange {
+  path {
+    fill: palette("shape", "orange");
+  }
+}
+
+.media-shape.media-shape--green {
+  path {
+    fill: palette("shape", "green");
+  }
+}
+
+.media-shape.media-shape--upside-down {
+  transform: rotate(180deg);
+}

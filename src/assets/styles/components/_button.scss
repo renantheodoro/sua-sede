@@ -1,0 +1,89 @@
+.button.btn {
+  font-family: $primary-font-stack;
+  font-size: to-rem(16px);
+  font-weight: 700;
+  color: palette("white");
+
+  padding: 1rem;
+
+  box-shadow: none;
+
+  min-width: 0;
+  width: auto;
+  height: auto;
+
+  display: inline-block;
+  margin: 0;
+
+  line-height: 1rem;
+
+  transition: ease 0.3s;
+
+  letter-spacing: 0;
+
+  text-transform: inherit;
+
+  border-radius: 8px;
+
+  @media screen and (max-width: breakpoint("tablet")) {
+    width: 100%;
+  }
+
+  &.button--primary {
+    background-color: palette("button", "orange");
+    border: 1px solid palette("button", "orange");
+
+    &:hover {
+      background-color: palette("white");
+      color: palette("button", "orange");
+    }
+  }
+
+  &.button--secondary {
+    background-color: palette("orange", "light");
+    color: palette("text", "orange");
+    border: 1px solid palette("orange", "light");
+
+    &:hover {
+      background-color: palette("white");
+      border-color: palette("text", "orange");
+    }
+  }
+
+  &.button--tertiary {
+    background-color: palette("purple");
+    color: palette("white");
+    border: 1px solid palette("purple");
+
+    &:hover {
+      background-color: palette("white");
+      color: palette("purple");
+    }
+  }
+
+  &.button--disabled {
+    background-color: #a4a4a4 !important;
+    color: palette("white") !important;
+    font-weight: 400;
+  }
+
+  &.button--tertiary-leaked {
+    background-color: transparent;
+    color: palette("purple");
+
+    border: 1px solid palette("purple");
+
+    &:hover {
+      background-color: palette("purple");
+      color: palette("white");
+    }
+  }
+
+  &:hover {
+    box-shadow: none;
+  }
+
+  &.button--full-width {
+    width: 100%;
+  }
+}

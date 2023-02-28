@@ -1,0 +1,22 @@
+#toast-container {
+    top: 5%;
+}
+
+.toast {
+  background-color: #291f6b;
+  padding: to-rem(18px);
+  box-shadow: 0px 16px 108px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+
+  color: palette('white');
+
+  strong {
+    display: inline-block;
+    margin-right: .5rem;
+  }
+
+  img {
+    display: inline-block;
+    margin-right: to-rem(20px);
+  }
+}
