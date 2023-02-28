@@ -1,0 +1,198 @@
+.plan-price-section {
+  .plan-price-section__wrapper {
+    background-color: palette("white");
+    border-radius: 8px;
+
+    border: 1px solid #cbcbcb;
+    padding: to-rem(24px);
+
+    @media screen and (min-width: breakpoint("desktop")) {
+      padding: to-rem(44px);
+    }
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: to-rem(18px);
+    margin-bottom: to-rem(18px);
+
+    @media screen and (min-width: breakpoint("desktop")) {
+      font-weight: 700;
+      font-size: to-rem(28px);
+      line-height: to-rem(33px);
+      margin-bottom: to-rem(50px);
+    }
+  }
+
+  p {
+    font-weight: 400;
+    font-size: to-rem(12px);
+    line-height: to-rem(18px);
+    color: #777;
+    margin-bottom: to-rem(24px);
+
+    @media screen and (min-width: breakpoint("desktop")) {
+      font-size: to-rem(22px);
+      line-height: to-rem(25px);
+      margin-bottom: 0;
+    }
+  }
+
+  .plan-price-section__card {
+    border-radius: 8px;
+    padding: to-rem(20px);
+
+    @media screen and (min-width: breakpoint("desktop")) {
+      padding: to-rem(44px);
+    }
+
+    h2 {
+      font-weight: 700;
+      font-size: to-rem(20px);
+      line-height: to-rem(24px);
+      margin-bottom: to-rem(41px);
+
+      @media screen and (min-width: breakpoint("desktop")) {
+        font-size: to-rem(38px);
+        line-height: to-rem(44px);
+        margin-bottom: to-rem(48px);
+      }
+    }
+
+    h3 {
+      font-weight: 700;
+      font-size: to-rem(14px);
+      line-height: 1rem;
+      text-transform: uppercase;
+      color: #424242;
+      margin-bottom: to-rem(12px);
+
+      @media screen and (min-width: breakpoint("desktop")) {
+        font-size: to-rem(22px);
+        line-height: to-rem(24px);
+      }
+    }
+
+    p {
+      font-weight: 400;
+      font-size: to-rem(12px);
+      line-height: to-rem(18px);
+
+      color: #4b4b4b;
+
+      margin-bottom: to-rem(35px);
+
+      @media screen and (min-width: breakpoint("desktop")) {
+        font-size: to-rem(22px);
+        line-height: to-rem(25px);
+        margin-bottom: to-rem(72px);
+      }
+    }
+
+    .plan-price-section__card__bottom {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-direction: column;
+
+      @media screen and (min-width: breakpoint("desktop")) {
+        align-items: center;
+        flex-direction: row;
+      }
+
+      p {
+        font-weight: bold;
+        font-size: to-rem(18px);
+        line-height: to-rem(22px);
+
+        margin-bottom: to-rem(22px);
+
+        @media screen and (min-width: breakpoint("desktop")) {
+          font-size: to-rem(14px);
+          line-height: 25px;
+          margin-bottom: 0;
+        }
+
+        strong {
+          font-size: to-rem(22px);
+          line-height: to-rem(24px);
+
+          display: block;
+
+          @media screen and (min-width: breakpoint("desktop")) {
+            display: inline;
+            font-size: to-rem(24px);
+          }
+        }
+      }
+
+      a {
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1rem;
+        color: #313131;
+
+        border-bottom: 1px solid #313131;
+
+        padding-bottom: to-rem(8px);
+
+        display: flex;
+        align-items: center;
+
+        img {
+          display: block;
+          margin-left: to-rem(8px);
+        }
+      }
+    }
+  }
+
+  &.plan-price-section--orange {
+    .plan-price-section__card {
+      background: palette("orange", "light");
+
+      h2 {
+        color: palette("text", "orange");
+      }
+
+      .plan-price-section__card__bottom {
+        p {
+          color: palette("text", "orange");
+        }
+      }
+    }
+  }
+
+  &.plan-price-section--green {
+    .plan-price-section__card {
+      background: #E3FFE4;
+
+      h2 {
+        color: #048926;
+      }
+
+      .plan-price-section__card__bottom {
+        p {
+          color: #048926;
+        }
+      }
+    }
+  }
+
+  &.plan-price-section--purple {
+    .plan-price-section__card {
+      background: #E4E4FC;
+
+      h2 {
+        color: #614EE5;
+      }
+
+      .plan-price-section__card__bottom {
+        p {
+          color: #614EE5;
+        }
+      }
+    }
+  }
+}

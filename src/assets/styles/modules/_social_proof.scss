@@ -1,0 +1,28 @@
+.social-proof .social-proof__list {
+  text-align: center;
+}
+
+.social-proof .social-proof__list .social-proof__list__item {
+  display: inline-block;
+  margin: 0 to-rem(47px);
+
+  &:first-of-type {
+    img {
+      height: 80px;
+    }
+  }
+}
+
+.social-proof {
+  img {
+    width: 180px;
+    height: 39px;
+    object-fit: contain;
+  }
+
+  @media screen and (max-width: breakpoint("tablet")) {
+    .swiper {
+      overflow: visible;
+    }
+  }
+}

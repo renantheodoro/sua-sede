@@ -1,0 +1,161 @@
+.faq-section.section-default {
+  .content__row {
+    flex-direction: column-reverse;
+
+    @media screen and (min-width: breakpoint("desktop")) {
+      flex-direction: row;
+    }
+  }
+
+  .faq-section__thumb-column {
+    padding: 0;
+    background-color: palette("orange", "light");
+
+    margin-top: to-rem(34px);
+
+    @media screen and (min-width: breakpoint("desktop")) {
+      margin-top: 0;
+    }
+
+    .faq-section__thumb-column__image {
+      width: 100%;
+      height: calc(100% - 200px);
+      max-height: 640px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .faq-section__thumb-column__footer {
+      padding: to-rem(24px);
+      display: flex;
+
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+
+      .faq-section__thumb-column__footer__icon {
+        margin-right: 1rem;
+      }
+
+      .faq-section__thumb-coumn__footer__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+      }
+
+      h3 {
+        font-weight: 700;
+        font-size: to-rem(20px);
+        line-height: to-rem(18px);
+        margin-bottom: to-rem(6px);
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: to-rem(24px);
+        color: #777777;
+
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .faq-section__collapsible-column {
+    @media screen and (min-width: breakpoint("desktop")) {
+      padding: to-rem(50px);
+      background-color: #f2f2f2;
+    }
+
+    h2 {
+      font-weight: 700;
+      font-size: to-rem(28px);
+      line-height: to-rem(33px);
+      color: #313131;
+
+      margin-bottom: to-rem(26px);
+
+      @media screen and (min-width: breakpoint("desktop")) {
+        font-size: to-rem(24px);
+        line-height: to-rem(28px);
+        color: palette("purple");
+        max-width: to-rem(468px);
+
+        margin-bottom: to-rem(32px);
+      }
+    }
+
+    .collapsible {
+      box-shadow: none;
+      border: none;
+
+      li.active {
+        .collapsible-header {
+          border-bottom: 0;
+
+         .icon {
+            transform: rotate(180deg);
+          }
+        }
+      }
+
+      .collapsible-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        font-family: $primary-font-stack;
+        font-weight: 400;
+        font-size: to-rem(16px);
+        line-height: to-rem(18px);
+
+        color: palette("grey");
+
+        padding: to-rem(24px) 0 1rem 0;
+
+        background-color: transparent;
+        border-bottom: 1px solid #bebebe;
+
+        position: relative;
+
+        @media screen and (min-width: breakpoint("desktop")) {
+          font-size: to-rem(20px);
+          line-height: to-rem(24px);
+        }
+
+        .icon {
+          transition: ease 0.3s;
+
+          display: inline-block;
+          margin-left: 1rem;
+
+          transform: rotate(0deg);
+
+          width: 1rem;
+          height: 1rem;
+        }
+      }
+
+      .collapsible-body {
+        font-weight: 400;
+        font-size: to-rem(14px);
+        line-height: to-rem(21px);
+        color: #777777;
+
+        padding: 1rem;
+        padding-top: 0;
+
+        @media screen and (min-width: breakpoint("desktop")) {
+          font-size: 1rem;
+          line-height: to-rem(24px);
+        }
+
+        margin-bottom: 1rem;
+        padding-left: 0;
+
+        border-bottom: 1px solid #bebebe;
+      }
+    }
+  }
+}
