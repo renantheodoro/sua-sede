@@ -1,4 +1,4 @@
-# SuaSede - Serviço Completo de Retaguarda
+# Sua Sede - O seu espaço completo para negócios: aluguel de Escritório Virtual, Salas de Reunião, Contabilidade Digital e mais.
 
 Bem-vindo ao repositório do projeto SuaSede! Este é um serviço completo de retaguarda para o seu negócio, oferecendo recursos como Escritório Virtual, Salas de Reunião, Contabilidade Digital e muito mais. Abaixo estão as informações sobre como configurar e implantar o projeto. Por favor, leia com atenção antes de continuar.
 
