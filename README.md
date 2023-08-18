@@ -4,7 +4,7 @@ Bem-vindo ao repositório do projeto SuaSede! Este é um serviço completo de re
 
 ## Contato
 
-Para descobrir mais sobre os serviços oferecidos pela SuaSede, [entre em contato conosco](mailto:contato@sua-sede.com).
+Para descobrir mais sobre os serviços oferecidos pela SuaSede, [entre em contato conosco](https://suasede.com.br).
 
 ## Requisitos
 
